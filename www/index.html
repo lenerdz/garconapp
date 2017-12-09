@@ -13,8 +13,12 @@
 		<div class="yellow darken-4 white-text valign-wrapper">
 			<h5 class="titulo">Só de Cenoura</h5>
 			<div>
-				<i class="material-icons waves-effect waves-light waves-circle">more_vert</i>
+				<i data-activates="submenu" data-gutter="5" data-beloworigin="true" data-contrainwidth="false" class="material-icons waves-effect waves-light waves-circle dropdown-button">more_vert</i>
 			</div>
+
+			<ul class="dropdown-content" id="submenu">
+				<li><a class="black-text acao-limpar">Limpar</a></li>
+			</ul>
 		</div>
 	
 		<ul class="tabs yellow darken-4">
@@ -81,7 +85,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="fixed-action-btn">
+	<div class="fixed-action-btn" id="confirmar">
 		<a href="#confirmacao" class="btn-floating btn-large waves-effect waves-light brown modal-trigger">
 			<i class="material-icons">done</i>
 		</a>
@@ -95,10 +99,13 @@
 				<label for="numero-mesa">Número da mesa</label>
 			</div>
 			<blockquote id="resumo">
-				<p></p>
+				Teste
 			</blockquote>
 		</div>
-		<div class="modal-footer">Rodapé</div>
+		<div class="modal-footer">
+			<button class="btn deep-orange waves-effect waves-light modal-close">Pedir</button>
+			<button class="acao-limpar btn-flat waves-effect waves-red modal-close">Cancelar</button>
+		</div>
 	</div>
 
     <script src="js/jquery.min.js"></script>
